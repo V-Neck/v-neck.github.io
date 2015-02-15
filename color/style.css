@@ -29,8 +29,7 @@
 
 .color-pick{
     position: relative;
-    left: 50%;
-    margin-left: -50px;
+    left: 0%;
     font-size: 20px;
     font-family: 'Ubuntu',sans-serif;
     font-weight: 700;
@@ -47,7 +46,6 @@
     top: 30%;
     padding: 10%;
     height:20%;
-    left: 0%;
     width: 80%;
     color: white;
     font-size: 50px;
@@ -55,12 +53,6 @@
     font-weight: 700;
     display: block;
     text-align: center;
-      color: white;
-      text-shadow:
-       -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
