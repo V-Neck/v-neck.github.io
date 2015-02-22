@@ -1,0 +1,52 @@
+@font-face { font-family: 'Helvetica'; src: url('Fonts/HelveticaNeue.dfont');}
+@font-face { font-family: 'Bebas'; src: url('Fonts/BebasNeue.otf');}
+
+body {
+  background: -webkit-linear-gradient(#072a40,#678aa0);
+  background: -o-linear-gradient(#072a40, #678aa0);
+  background: -moz-linear-gradient(#072a40,#678aa0);
+  background: linear-gradient(#072a40,#678aa0);
+}
+
+.snow{
+	position: absolute;
+	border-radius: 100%;
+	background-color: #FFFFFF;
+	top: -50px;
+}
+.shadow{
+	box-shadow: 0px 0px 10px white;
+}
+
+.hide{
+	display: none;
+}
+
+#message{
+	text-shadow: 0px 0px 10px green;
+	z-index: -1;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+	bottom: 60px;
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+	font-weight: 800;
+
+	font-size: 7em;
+	color: #FFFFFF;
+}
+
+#mes2{
+	z-index: 2;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+	bottom: 10px;
+	text-align: center;
+	font-family: "Ubuntu";
+	font-size: 3.2em;
+	color: #dd3535;
+}
