@@ -1,11 +1,13 @@
-## Major Bugs
+## Bugs
 
 ## UI
 - Aesthetics
- - [ ] Add conditions for random color generation
+ - Colors
+  - [ ] Add conditions for random color generation, prevents similar colors from being created
+  - [ ] Snap colors to grid, prevent free dragging of colors
+  - [ ] Allow colors to be placed incorrectly
 - GUI
-- Level win screen
+ - [ ] Clean up text on level win screen
 
 ## Backend
-- Checks
 
