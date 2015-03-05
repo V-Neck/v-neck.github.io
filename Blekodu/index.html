@@ -3,22 +3,28 @@
 <html>
 
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-	<script src="JS/script.js"></script>
-
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu|Montserrat' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="CSS/style.css" type="text/stylesheet" />
 
-	<link rel="import" href="bower_components/paper-button/paper-button.html">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="JS/bower_components/xcolor/jquery.xcolor.min.js"></script>
+	<script src="JS/bower_components/jquery.pep.js/src/jquery.pep.js"></script>
+	<script src="JS/script.js"></script>
+
 
 </head>
 
 
 <body>
-	<div>
-		<paper-button raised="" class="colored" role="button" tabindex="0">colored</paper-button>
+
+	<div id="unsort" class='board'></div>
+	<div id="sort" class='board'></div>
+	<div id="win">Congrats!</br>You won.
+		<div id="score">Score: </div>
+		<div id="ng_con" class='butt butt-con'>
+		<div id="ng" class="butt butt-mess">Next Level</div>
+	</div>
 	</div>
 </body>
 

@@ -10,7 +10,7 @@
 	border-radius: 1%;
 	text-align: center;
 	border-radius: 50%;
-    font-family: Helvetica Neue;
+    font-family: Ubuntu;
     color: rgba(255,255,255,.5);
     font-weight: 800;
     font-size: 30px;
@@ -28,6 +28,7 @@
 }
 
 .color-pick{
+    width: 5em;
     position: relative;
     left: 0%;
     font-size: 20px;
@@ -38,7 +39,7 @@
 }
 
 #button-con{
-    width: 100%;
+    width: 20%;
 }
 
 #mess{
