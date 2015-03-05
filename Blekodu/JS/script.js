@@ -9,7 +9,7 @@ $(document).ready(function(){
 	//Will hold colors for gradient. 
 	var color = [];
 	//Number of blocks
-	var num = 10;
+	var num = 7;
 	//_num used to make random tiles. USED WITH UNSORT
 	var _num = num -2;
 	//Used to check players guess against actual
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		var colorStop = [pallette[a(pallette.length -1)], pallette[a(pallette.length -1)]];
 		color = [];
 		if(total_score>0){
-			for(var i=0; i<5; i++){
+			for(var i=0; i<num; i++){
 				$('#'+i).remove();
 				$('#'+(100+i)).remove();
 			}
