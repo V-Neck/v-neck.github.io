@@ -9,7 +9,7 @@ $(document).ready(function(){
 	//Will hold colors for gradient. 
 	var color = [];
 	//Number of blocks
-	var num = 10;
+	var num = 5;
 	//_num used to make random tiles. USED WITH UNSORT
 	var _num = num -2;
 	//Used to check players guess against actual
@@ -21,6 +21,8 @@ $(document).ready(function(){
 	makeBoard();
 
 	function makeBoard(colorStop){
+		num = total_score+3;
+		_num = num-2;
 		//Holds color-stops in a gradient
 		var colorStop = [pallette[a(pallette.length -1)], pallette[a(pallette.length -1)]];
 		color = [];
@@ -78,8 +80,7 @@ $(document).ready(function(){
 						console.log(_num);
 						$('#win').fadeIn(500);
 						total_score++;
-						round_score = 0;	
-						//var color = [];
+						round_score = 0;
 						$("#score").replaceWith("<div id='score'>Level: "+total_score+"</div><div id='ng_con' class='butt butt-con'><div id='ng' class='butt butt-mess'>New Game</div>");
 					}
 				} else{
@@ -102,10 +103,10 @@ $(document).ready(function(){
 
 		var border = 10;
 
-		if(board == '#sort'){
+		if(_num > 6){
 			var board_width = win_x * .9;
 		} else {
-			var board_width = win_x * (_num/9);
+			var board_width = win_x * (_num/7);
 		}
 		var tile_s = (board_width - border)/num - border;
 		var board_height = tile_s + 2*border;

@@ -41,6 +41,7 @@
 }
 
 .board{
+	margin: 10px;
 	width: 10px;
 	height: 10px;
 	background-color: #888888;
@@ -60,19 +61,24 @@
 	background-color: white;
 }
 
-#sort{
+#sort{ 
+	position:absolute;
 	top: 70%;
 }
 #unsort{
+	postion relative
+	margin-top: 10%;
+	margin-bottom: 10%;
 	z-index: 3;
 }
 
 #win{
+	overflow: ellipsis;
 	display: none;
 	position: absolute;
 	max-width: 50%;
 	width: 50%;
-	height: 50%;
+	height: 30%;
 	top: 25%;
 	left: 25%;
 	background-color: white;
