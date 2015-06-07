@@ -105,8 +105,8 @@ $(document).ready(function(){
 	});
 
 	$("#bw").hoverIntent(function(){
-		A = "#fff";
-		C = "#000";
+		A = "#1E50E3";
+		C = "#FD7C2F";
 		color = [];
 		for( var i=1; i<=num; i++ ){
 			color.push($.xcolor.gradientlevel(A,C,i,num));
