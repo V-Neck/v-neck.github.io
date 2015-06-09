@@ -4,12 +4,19 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ @import url(http://fonts.googleapis.com/css?family=Roboto);
+
 body {
     overflow-x: hidden;
 }
 
 p {
     font-size: 20px;
+    font-family: 'Roboto';
+}
+
+span{
+    font-family: 'Roboto'
 }
 
 p.small {
@@ -364,4 +371,8 @@ a:visited{
 
 #brand:hover{
     color:#3af;
+}
+
+#copy{
+    font-family: 'Roboto';
 }
