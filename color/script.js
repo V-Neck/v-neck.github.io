@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//var color = ['#69D2E7','#A7DBD8','#F38630','#FA6900','#fe4365','#fc9d9a','#f9cdad','#556270','#4ecdc4','#c7f464','#ff6b6b','#c44d58','#d1e751','#ffffff','#000000','#4dbce9','#26ade4','#d95b43','#c02942','#542437','#53777a','#cff09e','#a8dba8','#79bd9a','#3b8686','#0b486b','#00a0b0','#6a4a3c','#cc333f','#eb6841','#edc951'];
-	
+
 	$("#mess").fadeOut(5000);
 
 	var A = "#dd8800";//First color stop
@@ -15,7 +15,7 @@ $(document).ready(function(){
 	for( var i=1; i<=num; i++ ){
 		/*
 		Iterates through percentages between 0 & 100
-		Uses those percentages to select colors 
+		Uses those percentages to select colors
 		push works on the gradient from a to c
 		unshift works on the gradient from c to a
 		they meet in the middle, thus, a-c-c-a
@@ -39,13 +39,13 @@ $(document).ready(function(){
 	}
 	var bubbler = function(){//main. Produces bubbles
 		//number of bubble allowed on screen. Will between deleting bubbles in a queue fashion once this number is reached
-		var n = 90;	
+		var n = 90;
 		//readjusts each time function is called
 		var width = $(window).width();
 		var height = $(window).height();
 
 		/*
-			Appends new div, which becomes bubble. 
+			Appends new div, which becomes bubble.
 			class: click, round
 			id = the number of iterations of bubbler
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
 		//clearInterval(circs)
 		clearInterval(clicker);
 	}, function(){
-		clicker = setInterval(function(){bubbler()},10);
+		clicker = setInterval(function(){bubbler()},100);
 	});
 
 
@@ -105,8 +105,8 @@ $(document).ready(function(){
 	});
 
 	$("#bw").hoverIntent(function(){
-		A = "#1E50E3";
-		C = "#FD7C2F";
+		A = "#000";
+		C = "#fff";
 		color = [];
 		for( var i=1; i<=num; i++ ){
 			color.push($.xcolor.gradientlevel(A,C,i,num));
