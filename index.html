@@ -120,15 +120,37 @@ input {
         </ul>
      <p>The first two (Fatal Encounter and Killed By Police) seem to be original sources. The other two (Mapping Police Violence and The Washington Post) claim to draw their data from multiple sources, including Fatal Encounters and Killed By Police. It was of keen interest to my research group to understand how individuals are distributed through these data sets both because we want to better understand where the data are actually coming from and because we want to impute any values that are present in one dataset but missing in another. However, the datasets are all very inconsistent. They each use totally different formatting, encodings, and span different periods of time. </p>
 
-     <p>To make a year-long story short, I merged the four datasets into one unified dataset. I presented my results at the 2019 Undergraduate Research Symposium, but hadn't done much in the way of visualization. I was primarily interested in two questions:
+     <p>To make a year-long story short, I merged the four datasets into one unified dataset. I presented my results at the 2019 Undergraduate Research Symposium, but hadn't done much in the way of visualization. I was primarily interested in two questions:</p>
         <ol>
             <li>How does fatal police force vary through space, time, and race?</li>
             <li>What's the distribution of fatal force recipients through the four crowdsourced datasets we have available?</li>
+    
     <h2>Storyboarding</h2>
     <p>To answer those questions, I imagined a chloropleth with various sliders that would change which particular rows would be dispalyed. I pictured the data as a histogram where the bars could be selected to indicated which parts of the data you're interested in. </p>
-    <p>I also pictured a dynamic Venn diagram which would also update with the sliders. This would be a great first step towards answer both of my principle question. </p>
+    <p>I also pictured a dynamic Venn diagram which would also update with the sliders. This would literally show how the data are distributed through space, time, and which dataset those data are coming from. It would, for example, let us see if there are any trends amongs young black men being shot in the south, and see which datasets are reporting those deaths. </p>
 
-    <img src="data/venn.png">
+    <img src="data/images/venn.png">
+    <img src="data/images/storyboard_1.jpg">
+    <img src="data/images/storyboard_2.jpg">
+    <img src="data/images/storyboard_3.jpg">
+    <img src="data/images/storyboard_4.jpg">
+
+    <h2>Realized Project</h2>
+    <p>I quickly realized I wasn't going to be able to do this in the time I had available, and dramatically reduced the scope of the project to just look at population-adjusted deaths across time and state. Even achieving just that took around 30 total hours to achieve.</p>
+
+    <p>Unfortunately, a lot of that time was spent preparing the final merged dataset, which provied valuable insights to my research, but itself didn't involve any visualizations. Even once I had clean, operable data, I still had a bear of a time munging the data in javascript. This is why I didn't include a selector for race. I couldn't get the interface to work with radio buttons and <code>rollup</code> in <code>d3</code>.
+
+    <p>That being said, it still accomplishes a sliver of my original goal. The final product involves the following:</p>
+        <ul>
+            <li>A choropleth of the United States showing the number of people shot in a particular year divided by the number of people residing in that state in that year</li>
+            <li>A slider (which is the principle mechanism that the user interacts with the application) that allows the user to select a year between 2000 and 2016.</li>
+            <li>A scale which adjusts to the change in quintiles over the years</li>
+        </ul>
+    <p>I chose to bin the data by quantile because this seemed to produce the most discernable geographic patterns. You can see those patterns when you slide the slider through the years.</p>
+    
+    <p>As a side note, through the process of setting an appropriate scale, I was reminded how, despite being highly politicized, your probability of dying from being shot by the police is on the order of 1 in a 1,000,000.</p>
+
+    <p>It's unfortunate I wasn't able to finish this project under the time constraints, but I'm going to continue fleshing this out.</p>
 
 
 	<h1>U.S.Yearly Fatal Police Encounters, 2000-2016</h1>
@@ -139,6 +161,6 @@ input {
 </div>
 
 <script type="text/javascript" src="script.js"></script>
-
+<p> You can download a zipped version of this website <a href="data/site.zip">here</a>.
 </body>
 </html>
