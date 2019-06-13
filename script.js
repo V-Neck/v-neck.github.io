@@ -1,7 +1,5 @@
 // Vaughn Johnson, INFO 474, 2019-05-19
 
-const source_url = "data/police_shootings.csv";
-
 const START_YEAR = 2000;
 const N_BINS = 5;
 
